@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3FBF72C0-3828-4D3E-ACBA-365D0CED1610}</ProjectGuid>
+    <RootNamespace>CjhPlayer</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>CjhPlayer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CJHPLAYER.h" />
+    <ClInclude Include="cjhplayerDlg.h" />
+    <ClInclude Include="mySliderCtrl.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CJHPLAYER.cpp" />
+    <ClCompile Include="cjhplayerDlg.cpp" />
+    <ClCompile Include="mySliderCtrl.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="mp3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\mp3.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\desktop\desktop\bitmap1.bmp" />
+    <Image Include="..\..\..\..\..\desktop\desktop\bitmap2.bmp" />
+    <Image Include="..\..\..\..\..\desktop\desktop\bitmap7.bmp" />
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_ADD.bmp" />
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_BK.bmp" />
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_PAUSE.bmp" />
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_PAUSEB.bmp" />
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_PLAY.bmp" />
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_PLAYB.bmp" />
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_STOP1.bmp" />
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_STOP2.bmp" />
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_VO.bmp" />
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_vol.bmp" />
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDC_BG.bmp" />
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDC_NEXT.bmp" />
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDC_PRE.bmp" />
+    <Image Include="..\..\..\..\..\Pictures\Pictures\IDB_BACK.bmp" />
+    <Image Include="..\..\..\..\..\Pictures\Pictures\IDB_SPEED.bmp" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\IDB_ADD.bmp" />
+    <Image Include="res\IDB_BK.bmp" />
+    <Image Include="res\IDB_BKLIST.bmp" />
+    <Image Include="res\IDB_FILES.bmp" />
+    <Image Include="res\IDB_MYQQ.bmp" />
+    <Image Include="res\IDB_PAUSEB.bmp" />
+    <Image Include="res\IDB_PLAYB.bmp" />
+    <Image Include="res\IDB_SELETED.bmp" />
+    <Image Include="res\IDB_STOP1.bmp" />
+    <Image Include="res\IDB_STOP2.bmp" />
+    <Image Include="res\IDB_VO.bmp" />
+    <Image Include="res\IDC_NEXT.bmp" />
+    <Image Include="res\IDC_PRE.bmp" />
+    <Image Include="res\main.ico" />
+    <Image Include="res\main1.ico" />
+    <Image Include="res\main2.ico" />
+    <Image Include="res\main3.ico" />
+    <Image Include="res\main4.ico" />
+    <Image Include="res\mp3.ico" />
+    <Image Include="res\MR_HUI.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="mp3.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

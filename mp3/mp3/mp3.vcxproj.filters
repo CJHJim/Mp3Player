@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CJHPLAYER.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cjhplayerDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mySliderCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CJHPLAYER.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cjhplayerDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mySliderCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="mp3.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\mp3.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\mp3.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_vol.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\desktop\desktop\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\desktop\desktop\bitmap2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_VO.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDC_BG.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_PAUSE.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_PLAY.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_STOP1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_STOP2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_PAUSEB.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_PLAYB.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\desktop\desktop\bitmap7.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_ADD.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDC_NEXT.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDC_PRE.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\DESKTOP\Desktop\IDB_BK.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IDB_VO.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IDB_STOP1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IDB_STOP2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IDB_PAUSEB.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IDB_PLAYB.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IDB_ADD.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IDC_NEXT.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IDC_PRE.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IDB_BK.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\main.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\main1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\main2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\main3.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\main4.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\Pictures\Pictures\IDB_BACK.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\Pictures\Pictures\IDB_SPEED.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IDB_BKLIST.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IDB_SELETED.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IDB_MYQQ.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IDB_FILES.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\MR_HUI.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
